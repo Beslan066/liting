@@ -1430,10 +1430,11 @@ header .search-icon .ti-close,
 }
 
 .logo {
-    width: 100px;
+    width: 15%;
     margin-right: 80px;
     float: left;
 }
+
 
 .header-right {
     margin-left: auto
@@ -2740,4 +2741,9 @@ pre {
 .instagram-card figure {
     max-width: 290px;
     max-height: 218px;
+}
+
+.col.d-flex.transition-normal.latest-small-thumb.slick-slide.slick-active {
+    width: unset !important;
+    max-width: 360px !important;
 }

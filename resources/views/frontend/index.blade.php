@@ -1,11 +1,11 @@
 @extends('layouts.frontend')
 
 @section('content')
-    <section class="featured-slider-1 pt-65 pb-65 main">
+    <section class="featured-slider-1 pt-65 main">
         <div class="position-relative">
             <div class="featured-slider-1-arrow color-white"></div>
             <div class="container">
-                <div class="hero-1 featured-slider-1-items mb-65">
+                <div class="hero-1 featured-slider-1-items ">
                     @if(isset($proses))
                         @foreach($proses as $prose)
                             <div class="slider-single">
@@ -33,10 +33,7 @@
                                             <span class="time-to-read has-dot">6 mins to read</span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <img class="border-radius-10 prose-main-image"
-                                             src="{{asset('storage/public/' . $prose->image)}}" alt="{{$prose->name}}">
-                                    </div>
+
                                 </div>
                             </div>
                         @endforeach
@@ -49,22 +46,7 @@
                 @if(isset($proses))
                     @foreach($proses as $prose)
                         <div class="col d-flex transition-normal latest-small-thumb">
-                            <div class="post-thumb d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
-                                <a class="color-white" href="single.html">
-                                    <img src="{{asset('storage/public/' . $prose->image)}}" alt="">
-                                </a>
-                            </div>
-                            <div class="post-content media-body align-self-center">
-                                <h5 class="post-title mb-15 text-limit-2-row font-medium">
-                                    <a href="single.html">
-                                        {{$prose->name}}
-                                    </a>
-                                </h5>
-                                <div class="entry-meta meta-1 float-left font-sm">
-                                    <span class="post-on">{{$prose->created_at}}</span>
-                                    <span class="post-by has-dot">13k views</span>
-                                </div>
-                            </div>
+
                         </div>
 
                     @endforeach
@@ -82,14 +64,6 @@
                     @foreach($poesies as $poesy)
                         <article class="col-lg-4 col-md-6 mb-40 wow fadeIn animated">
                             <div class="post-card-1 border-radius-10 hover-up">
-                                <div class="post-thumb thumb-overlay img-hover-slide position-relative"
-                                     @if(isset($poesy->image))style="background-image: url({{asset('frontend/assets/imgs/news/news-1.jpg')}})"
-
-                                     @else
-                                         style="background-image: url({{asset('frontend/assets/imgs/ornament.png')}})"
-                                    @endif>
-                                    <a class="img-link" href="single.html"></a>
-                                </div>
                                 <div class="post-content p-30">
                                     <div class="post-card-content">
                                         <h5 class="post-title font-md">

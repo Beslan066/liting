@@ -51,7 +51,7 @@
         <div class="container align-self-center">
             <div class="header-style-1">
                 <div class="logo">
-                    <a href="{{route('frontend.index')}}"><img src="{{asset('frontend/assets/imgs/theme/logo.svg')}}" alt=""></a>
+                    <a href="{{route('frontend.index')}}"><img src="{{asset('frontend/assets/imgs/logoli.png')}}" alt=""></a>
                 </div>
                 <div class="main-nav d-none d-lg-block">
                     <nav>
@@ -166,16 +166,6 @@
 <!-- Footer Start-->
 <footer class="pt-65 bg-dark">
     <div class="container">
-        <div class="row mb-65">
-            <div class="col-md-6">
-                <div class="logo wow fadeIn animated">
-                    <a href="index.html"><img src="{{asset('frontend/assets/imgs/theme/logo-white.svg')}}" alt=""></a>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="bottom-line mt-40"></div>
-            </div>
-        </div>
         <div class="row bottom-area-2">
             <div class="col-lg-4 col-md-6">
                 <div class="sidebar-widget widget-about wow fadeIn animated mb-30">

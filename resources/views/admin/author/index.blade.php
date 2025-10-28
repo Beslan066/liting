@@ -88,7 +88,10 @@
                                     @endif
                                 </tbody>
                             </table>
+                        </div>
 
+                        <div class="mt-4">
+                            {{$poesies->links('pagination::bootstrap-5')}}
                         </div>
                     </div>
                 </div>

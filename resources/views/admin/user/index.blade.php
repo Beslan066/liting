@@ -8,7 +8,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
-                                <h4 class="card-title">Проза</h4>
+                                <h4 class="card-title">Пользователи</h4>
 
                                 <div class="d-flex align-items-center">
                                     <div class="dropdown " style="margin-right: 10px">
